@@ -70,3 +70,16 @@ class Moon < Body
     return new_body
   end
 end
+
+solar = System.new("Solar")
+
+sun = Star.create("Giants", "Sun", 1_000_000, solar)
+earth = Planet.create(24, 365, "earth", 1000, solar)
+moon = Moon.create(33, "Earth", "Moon", 100, solar)
+
+puts sun.inspect
+puts earth.inspect
+puts moon.inspect
+
+puts solar.show.inspect
+puts solar.total_mass
