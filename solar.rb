@@ -20,3 +20,15 @@ class System
         @@bodies
     end
 end
+
+class Body
+
+  def initialize(name, mass)
+    @name = name
+    @mass = mass
+  end
+  def mass_return
+    @mass
+  end
+
+end
